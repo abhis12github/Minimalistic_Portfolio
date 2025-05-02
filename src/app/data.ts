@@ -1,6 +1,4 @@
 import { cache } from "react";
-import { marked } from "marked";
-
 
 export interface IProjectData {
   SLUG: string;

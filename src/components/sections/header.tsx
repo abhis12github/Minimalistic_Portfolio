@@ -1,4 +1,4 @@
-import { Asterisk, Briefcase, Building, Code, Code2, Github, GraduationCap, Instagram, Linkedin, Mail, MapPin, X } from "lucide-react";
+import { Briefcase, Code2, Github, GraduationCap, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 import { MovingElement } from "../navbar";
 import Link from "next/link";
 import clsx from "clsx";
@@ -49,10 +49,10 @@ const INFO = [
         href="https://leetcode.com/u/code_15_11/"
         className="underline underline-offset-[4px] decoration-gray-200 decoration-[1px] hover:decoration-current"
       >
-        Quests on Leetcode 
+        Quests on Leetcode
       </Link>
     ),
-    icon: <Code2/>,
+    icon: <Code2 />,
     className: "text-gray-900 bg-gray-100",
   },
   {

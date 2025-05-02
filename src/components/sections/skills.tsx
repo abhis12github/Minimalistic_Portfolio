@@ -1,8 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Image from "next/image";
 import {
   SiC,
   SiCplusplus,
@@ -35,6 +31,7 @@ import {
 } from "react-icons/si";
 import { TbBrandAdonisJs, TbBrandOpenai } from "react-icons/tb";
 import { SkillDataProvider } from "../SkillDataProvider";
+import { ReactNode } from "react";
 
 const Skill_data = [
   {
@@ -255,9 +252,9 @@ const InfiniteMovingRow = ({
   speed = 35,
   className = "",
 }: {
-  children: any;
-  direction: any;
-  speed: any;
+  children: ReactNode;
+  direction: "left" | "right";
+  speed: number;
   className: string;
 }) => {
   return (

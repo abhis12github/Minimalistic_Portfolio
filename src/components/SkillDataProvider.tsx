@@ -12,7 +12,7 @@ interface SkillDataProviderProps {
   skill_name: string;
 }
 
-export const SkillDataProvider = ({ src: IconComponent, width, height, index, color, skill_name }: SkillDataProviderProps) => {
+export const SkillDataProvider = ({ src: IconComponent, width, color, skill_name }: SkillDataProviderProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });

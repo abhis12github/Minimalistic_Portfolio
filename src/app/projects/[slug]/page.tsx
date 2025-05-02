@@ -1,6 +1,6 @@
-import { DATA, getProjectData } from "@/app/data";
+import { getProjectData } from "@/app/data";
 import clsx from "clsx";
-import { AppleIcon, ArrowUpRight, ExternalLinkIcon } from "lucide-react";
+import { AppleIcon, ExternalLinkIcon } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -26,8 +26,11 @@ export default async function Page({ params }: PageProps) {
     >
       {project[1]?.ICON ? (
         <div className="w-12 h-12 mx-auto mb-5">
-          <img
+          <Image
             src={project[1]?.ICON}
+            alt={"project icon"}
+            width={48}
+            height={48}
             className="mb-4 border border-gray-100 rounded-full shadow-lg dark:border-gray-600"
           />
         </div>

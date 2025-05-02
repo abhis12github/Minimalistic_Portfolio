@@ -1,4 +1,5 @@
-import { ArrowUpRight, ArrowUpRightSquareIcon, ExternalLink, Folder, Github } from "lucide-react";
+import { ExternalLink, Folder, Github } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 interface IProjectData {
@@ -22,10 +23,10 @@ export function Projects({
     <div id="projects" className="py-10">
       <h2 className="text-base font-medium text-primary/90">projects.</h2>
       <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
-        {Object.entries(data).map(([key, value]) => (
+        {Object.entries(data).map(([key,value]) => (
           <div
             className="min-w-[120px] flex-col px-4 py-1 border border-gray-200 dark:border-[#383838] rounded-lg hover:bg-gray-100 dark:bg-[#212121] dark:hover:bg-[#262626] dark:hover:border-[#4b4b4b] dark:shadow-[0_0_8px_rgba(0,0,0,0.8)] shadow-[0_0_8px_rgba(0,0,0,0.06)] flex relative"
-            key={value?.TITLE}
+            key={value?.TITLE + key}
           >
             {value?.WEB ? (
               <Link
@@ -63,10 +64,12 @@ export function Projects({
             >
               <div className="pt-3 pb-2 relative">
                 {value?.ICON ? (
-                  <img
+                  <Image
                     className="w-[32px] drop-shadow-xl"
                     src={value?.ICON}
                     alt={value?.TITLE}
+                    height={32}
+                    width={32}
                   />
                 ) : (
                   <>

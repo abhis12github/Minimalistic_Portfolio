@@ -1,7 +1,7 @@
 // ContactSection.jsx
 import React from 'react';
 import Link from 'next/link';
-import { Github, Instagram, Twitter, Linkedin, Box, File, FileUser } from 'lucide-react';
+import { Github, Instagram, Linkedin, Box, FileUser } from 'lucide-react';
 import { MovingElement } from '../navbar';
 
 const ContactSection = () => {
