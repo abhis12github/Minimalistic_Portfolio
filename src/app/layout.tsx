@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     title: "Abhishek Anand | Software Developer",
     description:
       "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
-    url: "https://abhishek-anand.portfolio/",
+    url: "https://abhishekportfolio-blue.vercel.app/",
     type: "website",
     images: [
       {
-        url: "http://localhost:3000/opengraph-image.png",
+        url: "https://abhishekportfolio-blue.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Abhishek Anand | Software Developer",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   authors: [
-    { name: "Abhishek Anand", url: "https://abhishek-anand.portfolio/" },
+    { name: "Abhishek Anand", url: "https://abhishekportfolio-blue.vercel.app/" },
   ],
   keywords: [
     "Abhishek Anand",

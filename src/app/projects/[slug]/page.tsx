@@ -16,9 +16,7 @@ export default async function Page({ params }: PageProps) {
   if (!project) {
     notFound();
   }
-
-  console.log(project);
-
+  
   return (
     <div
       key={project[0]}
@@ -72,7 +70,7 @@ export default async function Page({ params }: PageProps) {
             : ""}
         </div>
         {project[1]?.TECH ? (
-          <div className="flex gap-2 text-xs">
+          <div className="flex flex-wrap gap-2 text-xs">
             {project[1]?.TECH.map((tech) => (
               <div
                 key={tech}

@@ -58,7 +58,7 @@ const ContactSection = () => {
                     <Link href="https://www.linkedin.com/in/abhishek-anand-0b3862257" target="_blank" rel="noopener noreferrer" className="p-3 text-foreground hover:scale-150 transition-all">
                         <Linkedin size={20} />
                     </Link>
-                    <Link href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer" className="p-3 text-foreground hover:scale-150 transition-all">
+                    <Link href="https://abhishekportfolio-blue.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-foreground hover:scale-150 transition-all">
                         <Box size={20} />
                     </Link>
                     <div className="h-24 w-px bg-foreground mt-4"></div>
